@@ -13,6 +13,5 @@ jobs:
           java-version: 18
           distribution: 'adopt'
       - uses: gradle/gradle-build-action@v2
-      - name: Start gardle build 
         with:
           arguments: build
