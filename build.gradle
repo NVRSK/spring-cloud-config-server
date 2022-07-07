@@ -33,6 +33,10 @@ test {
 	useJUnitPlatform()
 }
 
+wrapper {
+	gradleVersion = '7.4.2' //version required
+}
+
 bootBuildImage {
 	imageName = "nvrsk/${project.name}:${project.version}"
 	environment = ["BP_JVM_VERSION" : "18.*"]
